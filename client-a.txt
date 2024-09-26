@@ -1,4 +1,24 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+START
+Set Number to RANDOM(1, 10)
+Set guesses TO 3
 
+WHILE guesses is > 0 
+	Print "Guess the number (between 1 and 10):"
+Check playerGuess
+IF playerGuess = Number
+	Print "Yay! You got it right!"
+	Restart game
+ELSE
+	Print "Oh no... you got it wrong"
+	Set guesses TO guesses -1
+
+	IF guesses > 0
+		Print "You have " + guesses + " guesses left."
+	ELSE
+		Print "Sorry, you're all out of guesses. The right number was " + Number + "."
+	END IF
+END WHILE
+END

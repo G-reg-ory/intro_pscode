@@ -1,4 +1,38 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+START
+Warehouse = [ Entrance, Aisles, Bays ]
+Set Entrance TO (0, 0) - /* Southwestern most point
+Set targetLocation TO (8, 5)
+Set startingLocation TO Entrance 
+Set currentLocation TO (currentAisle, currentBay)
+Check currentLocation
+	WHILE currentAisle != 8
+	IF currentAisle < 8 
+		PRINT "Go East " + (8-currentAisle) + " aisles." 
+	ELSE 
+		PRINT "Go West " + (currentAisle-8) + " aisles."
+	
+	Check currentAisle
 
+	
+	IF currentAisle === 8
+		PRINT "Awesome! You found the right aisle"
+		
+		Check currentBay
+			WHILE currentBay != 5
+			IF currentBay < 5
+				PRINT "Go North " + (5-currentBay) + " bays."
+			ELSE 
+				PRINT "Go South " + (currentBay-5) + " bays."
+				
+			IF currentBay === 5
+					PRINT "You've arrived at your desired location!"
+			End IF
+			END WHILE
+	END IF 
+	END WHILE
+END
+			
+	

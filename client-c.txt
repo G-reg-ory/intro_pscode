@@ -1,4 +1,21 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+START
+SET cases TO 0
+SET products TO 0
+Check if package is scanned
+IF
+	WHILE products < 50 DO
+        	PRINT products
+        	SET products TO products  + 2
+		IF products === 50 DO
+			SET cases TO cases + 1
+			SET products TO 0
+			PRINT "Close case and begin a new one."
+		ELSE 
+			PRINT "Scan another package to continue."
+	END WHILE
+ELSE
+	PRINT "Please scan a package to continue."
+END
